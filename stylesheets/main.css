@@ -1,0 +1,804 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, partials/global/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, partials/global/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 30, partials/global/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 50, partials/global/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 63, partials/global/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 73, partials/global/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 85, partials/global/_normalize.scss */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 93, partials/global/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 105, partials/global/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 113, partials/global/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 122, partials/global/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 131, partials/global/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 140, partials/global/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 149, partials/global/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 157, partials/global/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 165, partials/global/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 169, partials/global/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 180, partials/global/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 188, partials/global/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 199, partials/global/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 207, partials/global/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 217, partials/global/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 225, partials/global/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 248, partials/global/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 262, partials/global/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 273, partials/global/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 286, partials/global/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 298, partials/global/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 307, partials/global/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 318, partials/global/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 330, partials/global/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 342, partials/global/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 353, partials/global/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 366, partials/global/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 375, partials/global/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 386, partials/global/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 395, partials/global/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 404, partials/global/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 415, partials/global/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 420, partials/global/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+/* line 5, partials/global/_reset.scss */
+p, h1, h2, h3, h4, h5, h6, ul, li, button, form, menu {
+  padding: 0;
+  margin: 0; }
+
+/* line 10, partials/global/_reset.scss */
+h1, h2, h3, h4, h5, h6, dt {
+  font-weight: normal;
+  line-height: 1.1em; }
+
+/* line 15, partials/global/_reset.scss */
+li {
+  list-style: none; }
+
+/*
+ * Responsive media
+ */
+/* line 23, partials/global/_reset.scss */
+img, embed, object, video {
+  max-width: 100%;
+  height: auto; }
+
+/* line 28, partials/global/_reset.scss */
+dl {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* line 33, partials/global/_reset.scss */
+dd {
+  margin-left: 0; }
+
+/* line 37, partials/global/_reset.scss */
+a:focus {
+  outline: none; }
+
+/* line 54, partials/global/_reset.scss */
+html {
+  overflow-y: scroll; }
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 62, partials/global/_reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/* line 70, partials/global/_reset.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 81, partials/global/_reset.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 86, partials/global/_reset.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 95, partials/global/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 108, partials/global/_reset.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 116, partials/global/_reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 126, partials/global/_reset.scss */
+textarea {
+  resize: vertical; }
+
+/*------------------------------------*\
+    $Breakpoint Settings
+\*------------------------------------*/
+/*------------------------------------*\
+    $Colors
+\*------------------------------------*/
+/*------------------------------------*\
+    $STRIP UNITS (Example: ems, px, %)
+\*------------------------------------*/
+/*------------------------------------*\
+    $EMS TO PIXELS (Example: 1 --> 16px)
+\*------------------------------------*/
+/*------------------------------------*\
+    $Strip Units, Convert Ems to PX
+\*------------------------------------*/
+/*------------------------------------*\
+    $Strip Units, Convert Px to Ems
+\*------------------------------------*/
+/*------------------------------------*\
+    $Structure
+\*------------------------------------*/
+/* line 15, partials/global/_extendables.scss */
+.break {
+  display: block; }
+
+/*------------------------------------*\
+    $Helper Classes
+\*------------------------------------*/
+/*
+ * Force a line break
+ */
+/*
+ * Image replacement
+ */
+/* line 17, partials/global/_helper-classes.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 25, partials/global/_helper-classes.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 36, partials/global/_helper-classes.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 45, partials/global/_helper-classes.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 61, partials/global/_helper-classes.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 75, partials/global/_helper-classes.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 91, partials/global/_helper-classes.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 97, partials/global/_helper-classes.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 106, partials/global/_helper-classes.scss */
+.clearfix {
+  *zoom: 1; }
+
+/*------------------------------------*\
+    $Px to Rems
+\*------------------------------------*/
+/*------------------------------------*\
+    $Opacity
+\*------------------------------------*/
+/*------------------------------------*\
+    $Text Overflow
+\*------------------------------------*/
+/*------------------------------------*\
+    $Margin for Mobile
+\*------------------------------------*/
+/*------------------------------------*\
+    $Visually Hidden
+\*------------------------------------*/
+/*------------------------------------*\
+    $Vertical-align Anything
+\*------------------------------------*/
+/* line 1, partials/styleguide/_fonts.scss */
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 5, partials/styleguide/_fonts.scss */
+h1 {
+  font-size: 4em; }
+
+/* line 9, partials/styleguide/_fonts.scss */
+h2 {
+  line-height: 2em; }
+
+/* line 13, partials/styleguide/_fonts.scss */
+a {
+  text-decoration: none;
+  color: #FF4E6E; }
+
+/* line 18, partials/styleguide/_fonts.scss */
+p {
+  font-size: 1.2em;
+  margin-bottom: 10px; }
+
+/**
+ * Buttons and
+ * Call-to-actions (CTA's)
+ */
+/**
+ * Susy Breakpoint Structure
+ */
+/*------------------------------------*\
+    $Box Sizing
+\*------------------------------------*/
+/* line 14, ../../../../../.rvm/gems/ruby-2.3.1/gems/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*------------------------------------*\
+    $Grid Setup
+\*------------------------------------*/
+/* line 22, partials/layout/_breakpoints.scss */
+.grid-construct {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, ../../../../../.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .grid-construct:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media (min-width: 37.5625em) {
+  /* line 43, partials/layout/_breakpoints.scss */
+  .grid-construct {
+    *zoom: 1;
+    max-width: 59em;
+    _width: 59em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 38, ../../../../../.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+    .grid-construct:after {
+      content: "";
+      display: table;
+      clear: both; } }
+@media (min-width: 60em) {
+  /* line 54, partials/layout/_breakpoints.scss */
+  .grid-construct {
+    *zoom: 1;
+    max-width: 59em;
+    _width: 59em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 38, ../../../../../.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+    .grid-construct:after {
+      content: "";
+      display: table;
+      clear: both; } }
+/**
+ * Box-model declarations,
+ * div structure,
+ * column breakdowns, etc.
+ */
+@media (min-width: 60em) {
+  /* line 12, partials/layout/_structure.scss */
+  .me {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline; } }
+
+@media (min-width: 60em) {
+  /* line 21, partials/layout/_structure.scss */
+  .bio {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline; } }
+
+/* line 1, partials/design/_bio.scss */
+.section-bio {
+  margin-bottom: 50px; }
+
+/* line 5, partials/design/_bio.scss */
+.me {
+  text-align: center;
+  padding: 20px; }
+  /* line 8, partials/design/_bio.scss */
+  .me__photo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px; }
+
+/* line 15, partials/design/_bio.scss */
+.bio {
+  padding: 50px 20px 20px 0px; }
+
+/* line 1, partials/design/_cv.scss */
+.section-heading {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FF4E6E; }
+
+/* line 8, partials/design/_cv.scss */
+.pad-top {
+  padding-top: 20px; }
+
+/* line 12, partials/design/_cv.scss */
+.tech-skills__item,
+.pro-experience__sub-item {
+  padding-left: 10px;
+  padding-bottom: 5px; }
+
+/* line 18, partials/design/_cv.scss */
+.pro-experience__sub-item {
+  list-style-type: disc;
+  list-style-position: inside; }
+
+/* line 23, partials/design/_cv.scss */
+.pro-experience__item {
+  margin-bottom: 20px; }
+
+/* line 27, partials/design/_cv.scss */
+.section-heading {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FF4E6E; }
