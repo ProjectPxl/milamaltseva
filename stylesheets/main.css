@@ -647,7 +647,7 @@ body {
 
 /* line 5, partials/styleguide/_fonts.scss */
 h1 {
-  font-size: 4em; }
+  font-size: 3em; }
 
 /* line 9, partials/styleguide/_fonts.scss */
 h2 {
@@ -732,8 +732,12 @@ p {
  * div structure,
  * column breakdowns, etc.
  */
+/* line 12, partials/layout/_structure.scss */
+.menu-bar {
+  width: 100%; }
+
 @media (min-width: 60em) {
-  /* line 12, partials/layout/_structure.scss */
+  /* line 16, partials/layout/_structure.scss */
   .me {
     width: 49.15254%;
     float: left;
@@ -741,7 +745,7 @@ p {
     display: inline; } }
 
 @media (min-width: 60em) {
-  /* line 21, partials/layout/_structure.scss */
+  /* line 22, partials/layout/_structure.scss */
   .bio {
     width: 49.15254%;
     float: left;
@@ -751,6 +755,15 @@ p {
     margin-right: 0;
     *margin-left: -1em;
     display: inline; } }
+
+/* line 1, partials/design/_menu-bar.scss */
+.menu-bar {
+  padding: 15px;
+  border-bottom: 1px solid #EEEEEE; }
+  /* line 5, partials/design/_menu-bar.scss */
+  .menu-bar .name-heading {
+    color: #FF4E6E;
+    font-weight: 200; }
 
 /* line 1, partials/design/_bio.scss */
 .section-bio {
@@ -771,34 +784,31 @@ p {
   padding: 50px 20px 20px 0px; }
 
 /* line 1, partials/design/_cv.scss */
+.section-cv {
+  margin-bottom: 50px; }
+
+/* line 4, partials/design/_cv.scss */
 .section-heading {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #FF4E6E; }
 
-/* line 8, partials/design/_cv.scss */
+/* line 11, partials/design/_cv.scss */
 .pad-top {
   padding-top: 20px; }
 
-/* line 12, partials/design/_cv.scss */
+/* line 15, partials/design/_cv.scss */
 .tech-skills__item,
 .pro-experience__sub-item {
   padding-left: 10px;
   padding-bottom: 5px; }
 
-/* line 18, partials/design/_cv.scss */
+/* line 21, partials/design/_cv.scss */
 .pro-experience__sub-item {
   list-style-type: disc;
   list-style-position: inside; }
 
-/* line 23, partials/design/_cv.scss */
+/* line 26, partials/design/_cv.scss */
 .pro-experience__item {
   margin-bottom: 20px; }
-
-/* line 27, partials/design/_cv.scss */
-.section-heading {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #FF4E6E; }
