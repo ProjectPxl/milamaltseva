@@ -1,0 +1,27 @@
+////////////////////////
+//
+// Structure
+//
+////////////////////////
+
+/**
+ * Box-model declarations,
+ * div structure,
+ * column breakdowns, etc.
+ */
+.menu-bar {
+  width: 100%;
+}
+
+.me {
+  @include breakpoint($breakpoint-lg){
+    @include span-columns(6,12);
+  }
+}
+
+.bio {
+  @include breakpoint($breakpoint-lg){
+    @include span-columns(6,12);
+    @include omega;
+  }
+}
