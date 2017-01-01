@@ -760,7 +760,19 @@ p {
 .menu-bar {
   padding: 15px;
   border-bottom: 1px solid #EEEEEE; }
-  /* line 5, partials/design/_menu-bar.scss */
+  @media (max-width: 37.5em) {
+    /* line 1, partials/design/_menu-bar.scss */
+    .menu-bar {
+      text-align: center; } }
+  @media (min-width: 37.5625em) {
+    /* line 1, partials/design/_menu-bar.scss */
+    .menu-bar {
+      text-align: center; } }
+  @media (min-width: 60em) {
+    /* line 1, partials/design/_menu-bar.scss */
+    .menu-bar {
+      text-align: left; } }
+  /* line 17, partials/design/_menu-bar.scss */
   .menu-bar .name-heading {
     font-weight: 200; }
 
@@ -781,6 +793,18 @@ p {
 /* line 15, partials/design/_bio.scss */
 .bio {
   padding: 50px 20px 20px 0px; }
+  @media (max-width: 37.5em) {
+    /* line 15, partials/design/_bio.scss */
+    .bio {
+      text-align: center; } }
+  @media (min-width: 37.5625em) {
+    /* line 15, partials/design/_bio.scss */
+    .bio {
+      text-align: center; } }
+  @media (min-width: 60em) {
+    /* line 15, partials/design/_bio.scss */
+    .bio {
+      text-align: left; } }
 
 /* line 1, partials/design/_cv.scss */
 .section-cv {
