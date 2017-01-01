@@ -2,8 +2,19 @@
 	padding: 15px;
 	border-bottom: 1px solid #EEEEEE;
 
+	@include breakpoint($breakpoint-sm){
+	  text-align: center;
+	}
+
+	@include breakpoint($breakpoint-md){
+	  text-align: center;
+	}
+
+	@include breakpoint($breakpoint-lg){
+	  text-align: left;
+	}
+
 	.name-heading {
-		color: $main;
 		font-weight: 200;
 	}
 }

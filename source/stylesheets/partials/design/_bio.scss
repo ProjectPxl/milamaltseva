@@ -14,4 +14,16 @@
 
 .bio{
 	padding: 50px 20px 20px 0px;
+
+	@include breakpoint($breakpoint-sm){
+	  text-align: center;
+	}
+
+	@include breakpoint($breakpoint-md){
+	  text-align: center;
+	}
+
+	@include breakpoint($breakpoint-lg){
+	  text-align: left;
+	}
 }
