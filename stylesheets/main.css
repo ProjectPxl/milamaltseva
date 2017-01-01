@@ -762,7 +762,6 @@ p {
   border-bottom: 1px solid #EEEEEE; }
   /* line 5, partials/design/_menu-bar.scss */
   .menu-bar .name-heading {
-    color: #FF4E6E;
     font-weight: 200; }
 
 /* line 1, partials/design/_bio.scss */
@@ -795,8 +794,8 @@ p {
   color: #FF4E6E; }
 
 /* line 11, partials/design/_cv.scss */
-.pad-top {
-  padding-top: 20px; }
+.pro-experience {
+  margin: 50px 0; }
 
 /* line 15, partials/design/_cv.scss */
 .tech-skills__item,
